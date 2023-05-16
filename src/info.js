@@ -2,39 +2,39 @@ export const artistas = {
     dados: [
         {
             id: "1",
-            tag: "drake",
+            tag: "Drake",
             nome: "Drake",
             nacionalidade: "Americano"
         },
         {
             id: "2",
-            tag: "post",
-            nome: "Post Maline",
+            tag: "Post",
+            nome: "Post Malone",
             nacionalidade: "Americano"
         },
         {
             id: "3",
-            tag: "wiz",
+            tag: "Wiz",
             nome: "Wiz Khalifa",
             nacionalidade: "Americano"
         },
         {
             id: "4",
-            tag: "roddy",
+            tag: "Roddy",
             nome: "Roddy Rich",
             nacionalidade: "Americano"
         },
         {
             id: "5",
-            tag: "mac",
+            tag: "Mac",
             nome: "Mac Miller",
             nacionalidade: "Americano"
         },
         {
             id: "6",
-            tag: "baby",
+            tag: "Baby",
             nome: "Lil Baby",
             nacionalidade: "Americano"
-        },
+        }
     ]
 }

@@ -1,11 +1,11 @@
 import React from "react";
 import styled from 'styled-components'
 
-import { corBranca, corPimaria } from "Components/UI/variaveis";
-import logo from 'Components/assets/images/spotify-2.svg'
+import { corBranca, corFundoEscura } from "Components/UI/variaveis";
+import logo from 'assets/images/spotify-2.svg'
 
 const StyledHeader = styled.header`
-    background-color: ${corPimaria};
+    background-color: ${corFundoEscura};
     padding: 10px 0;
 `
 
@@ -23,8 +23,8 @@ const Logo = styled.img`
 
 const Link = styled.a`
     text-decoration: none;
-    color: ${(props) => (props.primary ? corPimaria : "white")};
-    background: ${(props) => (props.primary ? "white" : corPimaria)};
+    color: ${(props) => (props.primary ? corFundoEscura : "white")};
+    background: ${(props) => (props.primary ? "white" : corFundoEscura)};
     margin-left: 20px;
     padding: 5px 10px;
     border-radius: 10px;
@@ -39,8 +39,8 @@ const Cabecalho = () => {
             <Navigation>
                 <Logo src={logo}/>
                 <div>
-                    <Link primary href="">Ver mais</Link>
-                    <Link href="">Ajuda</Link>
+                    <Link primary href="https://open.spotify.com/" target="_blank">Sporify</Link>
+                    <Link href="">Sobre</Link>
                 </div>
             </Navigation>
         </StyledHeader>
