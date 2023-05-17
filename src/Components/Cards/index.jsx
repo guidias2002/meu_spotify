@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import ImageFilter from 'Components/ImageFilter'
 
-import { corCardEscura } from "Components/UI/variaveis";
+import { corBtnPlay, corCardEscura } from "Components/UI/variaveis";
 import { FaPlay } from "react-icons/fa";
-import { BtnPlay, DescricaoArtista, NomeArtista } from "Components/UI";
+import { NomeArtista } from "Components/UI";
 
 
 const Cards = styled.div`
@@ -21,6 +21,15 @@ const Cards = styled.div`
         padding: 0 10px;
     }
 `
+
+const BtnPlay = styled.button`
+    transition: 500ms;
+    padding: 15px;
+    background-color: ${corBtnPlay};
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+`;
 
 export default (props) => {
 

@@ -10,6 +10,7 @@ const Container = styled.main`
     width: 100%;
     height: calc(100vh - 70px);
     background: ${corFundoEscura};
+    padding: 0 5px;
 `
 
 export default () => {

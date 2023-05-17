@@ -1,9 +1,11 @@
 import React from "react";
 import styled from 'styled-components'
 
-import { BoxArtistas } from "Components/UI";
 import { artistas } from 'info'
 import CardArtista from "Components/CardArtista";
+import { BoxArtistas } from "Components/UI";
+
+
 
 const Artistas = () => {
     return (
