@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import ImageFilter from 'Components/ImageFilter'
 
-import { corBranca, corCardEscura } from "Components/UI/variaveis";
+import { corCardEscura } from "Components/UI/variaveis";
 import { FaPlay } from "react-icons/fa";
-import { BtnPlay } from "Components/UI";
+import { BtnPlay, DescricaoArtista, NomeArtista } from "Components/UI";
 
 
 const Cards = styled.div`
@@ -22,12 +22,6 @@ const Cards = styled.div`
     }
 `
 
-const NomeArtista = styled.p`
-    font-weight: bold;
-    color: ${corBranca};
-
-`
-
 export default (props) => {
 
     const [botao, setBotao] = useState(false)
@@ -42,7 +36,7 @@ export default (props) => {
                 <NomeArtista>
                     {props.nome}
                 </NomeArtista>
-                {botao ? <BtnPlay> <FaPlay /> </BtnPlay> : "" }
+                {botao ? <BtnPlay> <FaPlay /> </BtnPlay> : ""}
             </div>
         </Cards>
     )

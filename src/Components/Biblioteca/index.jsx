@@ -5,12 +5,12 @@ import { artistas } from 'info'
 import Cards from "Components/Cards";
 import { Box } from "Components/UI";
 
-const Biblioteca = () => {
+const Biblioteca = (props) => {
     return (
         <Box>
-            {artistas.dados.map(({ id, nome, tag }) => {
+            {artistas.dados.map(({ id, nome, tag, profissao }) => {
                 return (
-                    <Cards id={id} nome={nome} tag={tag} />
+                    <Cards id={id} nome={nome} tag={tag} profissao={profissao}/>
                 )
             })}
         </Box>

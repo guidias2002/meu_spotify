@@ -5,7 +5,7 @@ import mac from 'assets/images/mac.jpg'
 import post from 'assets/images/post.jpg'
 import roddy from 'assets/images/roddy.jpg'
 import wiz from 'assets/images/wiz.jpg'
-import { Icone } from './UI'
+import { Icone } from 'Components/UI'
 
 export default (tag) => {
     const Images = {
@@ -19,3 +19,4 @@ export default (tag) => {
 
     return Images[tag]
 }
+

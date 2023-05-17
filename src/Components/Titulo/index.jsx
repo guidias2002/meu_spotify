@@ -1,9 +1,10 @@
 import { corBranca } from "Components/UI/variaveis";
 import styled from "styled-components";
 
-const Ttiulo = styled.h1`
+const Titulo = styled.h1`
+    margin: 0;
     padding: 25px 0;
     color: ${corBranca};
 `
 
-export default Ttiulo;
+export default Titulo;
