@@ -6,15 +6,23 @@ import logo from 'assets/images/spotify-2.svg'
 
 const StyledHeader = styled.header`
     background-color: ${corFundoEscura};
-    padding: 10px 0;
 `
 
 const Navigation = styled.nav`
     width: 80%;
+    height: 90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+
+    @media (max-width: 1400px) {
+        width: 90%;
+    }
+
+    @media (max-width: 992px) {
+        width: 95%;
+    }
 `
 
 const Logo = styled.img`

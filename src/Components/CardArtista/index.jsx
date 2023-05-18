@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import ImageFilterArtista from "Components/ImageFilterArtista";
-import { NomeArtista } from "Components/UI";
+import { BtnPlay, NomeArtista } from "Components/UI";
 import styled from "styled-components";
-import { corBtnPlay, corCardEscura } from "Components/UI/variaveis";
+import { corCardEscura } from "Components/UI/variaveis";
 import { FaPlay } from "react-icons/fa";
 
 const CardArtista = styled.div`
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 20px;
     align-items: center;
     background-color: ${corCardEscura};
     border-radius: 5px;
@@ -26,18 +26,6 @@ const DescricaoArtista = styled.div`
     flex-direction: column;
     justify-content: space-between;
     margin: 20px 0;
-`;
-
-const BtnPlay = styled.button`
-    transition: 500ms;
-    padding: 15px;
-    background-color: ${corBtnPlay};
-    border-radius: 30px;
-    border: none;
-    cursor: pointer;
-    position: absolute;
-    top: 130px;
-    right: 20px;
 `;
 
 export default (props) => {

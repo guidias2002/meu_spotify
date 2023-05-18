@@ -8,9 +8,13 @@ import Artistas from "Components/Artistas";
 
 const Container = styled.main`
     width: 100%;
-    height: calc(100vh - 70px);
+    height: calc(100vh - 90px);
     background: ${corFundoEscura};
-    padding: 0 5px;
+
+    @media (max-width: 1400px) {
+        height: 100%;
+        padding-bottom: 20px;
+    }
 `
 
 export default () => {
